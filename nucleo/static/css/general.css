@@ -1,0 +1,69 @@
+:root {
+    --azul-bg-darker: rgb(4, 14, 26);
+    --azul-bg-dark: rgb(6, 21, 37);
+    --azul-bg: rgb(0, 42, 104);
+    --azul-primary: rgb(164, 241, 255);
+    --azul-secondary: rgb(0, 45, 82);
+    --azul-tertiary: rgb(186, 214, 255);
+}
+
+body {
+    color: white;
+    background-color: var(--azul-bg-dark);
+    background-image: url(../img/bg1.png);
+    background-repeat: repeat;
+    background-position-x: center;
+    background-position-y: top;
+    font-family: "Questrial", sans-serif;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.contenedor-custom {
+    padding-top: 32px;
+
+    h1 {
+        font-weight: 500;
+        font-size: clamp(1.85rem, 5.5vw, 4.75rem);
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: clamp(1.65rem, 4.5vw, 3.5rem);
+    }
+}
+
+.body-centrado {
+    padding-bottom: 64px;
+    text-align: center;
+}
+
+.btn {
+    color: white;
+    background-color: var(--azul-bg);
+}
+
+.btn-grande {
+    font-size: clamp(1rem, 2.5vh, 6rem);
+}
+
+* {
+    border-color: transparent !important;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: var(--azul-bg-darker) !important;
+}
+
+.nav-link {
+    color: var(--azul-tertiary);
+}
+
+.navbar-toggler {
+    background-color: var(--azul-secondary);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url(../img/navbar_toggler_icon.png);
+}
