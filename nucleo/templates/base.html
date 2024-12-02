@@ -15,8 +15,9 @@
 
     <title>St. Fashion</title>
 </head>
-<body class="body-centrado">
+<body class="text-center">
     
+    {% comment %} navbar {% endcomment %}
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="/"><img src="{% static "img/logo.png" %}" width="56px"> St. Fashion</a>
@@ -26,15 +27,15 @@
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio
+                        <a class="nav-link" href="#inicio">Inicio
                             <span class="visually-hidden">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Descargar</a>
+                        <a class="nav-link" href="#descargar">Descargar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
                     </li>
                 </ul>
                 {% comment %} <form class="d-flex">
@@ -45,16 +46,43 @@
         </div>
     </nav>
     
+    {% comment %} contenido {% endcomment %}
     <div class="container contenedor-custom">
-        <h1>Todos los estilos que necesites<br></h1>
+        <h1 id="inicio">Todos los estilos que necesites<br></h1>
         <h2>Los tenemos aquí.</h2>
-        <img class="img-fluid" src="{% static "img/separador.png" %}">
-        <h3>St. Fashion</h3>
-        <p>Tienda segura, fácil de usar, y actualizada a las tendencias actuales.</p>
+        <img class="img-fluid separador" src="{% static "img/separador.png" %}">
+        <h2>St. Fashion</h2>
+        <h3>Tienda segura, fácil de usar, y actualizada a las tendencias actuales.</h3>
+        <br>
 
         {% comment %} ESTO LUEGO DEBE DEPENDER DE SI ESTAS EN MOVIL O EN PC {% endcomment %}
         <a class="btn btn-grande">Descargar</a>
     </div>
+
+    {% comment %} footer {% endcomment %}
+    <footer class="d-flex flex-wrap justify-content-center text-lg-start">
+        <img class="img-fluid separador" src="{% static "img/separador.png" %}">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h2 class="text-uppercase fw-bold">SOBRE NOSOTROS</h2>
+                <p>
+                    Somos un dúo de estudiantes de Duoc UC.<br>
+                    Esta es nuestra tienda, St. Fashion.
+                </p>
+            </div>
+      
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h2 class="text-uppercase fw-bold" id="contacto">CONTACTO</h2>
+      
+                <p>📍Ubicación: Fashion Street, #04, Ciudad de la Moda.</p>
+                <p>🕒Horario de Atención: Lunes-Viernes 10:30 a 20:00 | Sábado 14:00 a 19:00</p>
+                <p>📞Contacto: +123 654 0406 | contacto@saint.fashion</p>
+
+            </div>
+          </div>
+        </div>
+    </footer>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

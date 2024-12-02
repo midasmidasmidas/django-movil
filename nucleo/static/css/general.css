@@ -24,18 +24,17 @@ body {
 
     h1 {
         font-weight: 500;
-        font-size: clamp(1.85rem, 5.5vw, 4.75rem);
+        font-size: clamp(2.25rem, 5.5vw, 4.75rem);
     }
 
     h2 {
         font-weight: 400;
-        font-size: clamp(1.65rem, 4.5vw, 3.5rem);
+        font-size: clamp(1.75rem, 4.5vw, 3.5rem);
     }
 }
 
-.body-centrado {
-    padding-bottom: 64px;
-    text-align: center;
+.separador {
+    padding: 64px 0 64px 0;
 }
 
 .btn {
@@ -44,7 +43,7 @@ body {
 }
 
 .btn-grande {
-    font-size: clamp(1rem, 2.5vh, 6rem);
+    font-size: clamp(1rem, 4.75vh, 12rem);
 }
 
 * {
