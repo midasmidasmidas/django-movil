@@ -38,14 +38,19 @@ body {
     padding-bottom: 32px;
 }
 
+.small-text {
+    font-size: 0.9rem;
+    color: var(--azul-tertiary);
+}
+
 .screenshot {
     width: clamp(180px, 2.5vh, 320px) !important;
     filter: drop-shadow(0px 8px 8px black);
 }
 
-.small-text {
-    font-size: 0.9rem;
-    color: var(--azul-tertiary);
+.qr {
+    width: clamp(120px, 30vh, 300px) !important;
+    filter: drop-shadow(0px 8px 8px black);
 }
 
 .separador {
