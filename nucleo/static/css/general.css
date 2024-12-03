@@ -38,6 +38,16 @@ body {
     padding-bottom: 32px;
 }
 
+.screenshot {
+    width: clamp(180px, 2.5vh, 320px) !important;
+    filter: drop-shadow(0px 8px 8px black);
+}
+
+.small-text {
+    font-size: 0.9rem;
+    color: var(--azul-tertiary);
+}
+
 .separador {
     padding: 64px 0 64px 0;
 }
@@ -45,6 +55,10 @@ body {
 .btn {
     color: white;
     background-color: var(--azul-bg);
+
+    --bs-btn-bg: var(--azul-bg);
+    --bs-btn-hover-bg: var(--azul-bg);
+    --bs-btn-active-bg: var(--azul-bg-darker);
 }
 
 .btn-grande {
