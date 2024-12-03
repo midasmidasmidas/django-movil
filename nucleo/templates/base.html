@@ -55,9 +55,16 @@
         <h2>St. Fashion</h2>
         <h3>Tienda segura, fácil de usar, y con un catálogo actualizado constantemente.</h3>
         <br>
-        {% comment %} ESTO LUEGO DEBE DEPENDER DE SI ESTAS EN MOVIL O EN PC {% endcomment %}
-        <a class="btn btn-grande" id="descargar">Descargar</a><br>
-        <span class="small-text">(Para dispositivos Android)</span><br>
+        {% comment %} ESTO DEPENDE DE SI ESTAS EN MOVIL O EN PC {% endcomment %}
+        {% comment %} <p>debug agent: {{ request.user_agent }}</p> {% endcomment %}
+        {% comment %} <p>debug is mobile: {{ request.user_agent.is_mobile }}</p> {% endcomment %}
+        {% if request.user_agent.is_mobile %}
+            <a class="btn btn-grande" id="descargar" href="">Descargar</a><br>
+            <span class="small-text">(Para dispositivos Android)</span><br>
+        {% else %}
+            <a class="btn btn-grande" id="descargar" href="">fiuuurruumumum</a><br>
+            <span class="small-text">(you are on computer)</span><br>
+        {% endif %}
 
         <img class="img-fluid separador" src="{% static "img/separador.png" %}"><br>
         <h2>Imágenes</h2>
