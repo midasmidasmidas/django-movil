@@ -24,13 +24,18 @@ body {
 
     h1 {
         font-weight: 500;
-        font-size: clamp(2.25rem, 5.5vw, 4.75rem);
+        font-size: clamp(2.25rem, 5.5vw, 4.65rem);
     }
 
     h2 {
         font-weight: 400;
-        font-size: clamp(1.75rem, 4.5vw, 3.5rem);
+        font-size: clamp(1.75rem, 4.5vw, 3.35rem);
     }
+}
+
+#img-random {
+    width: clamp(96px, 240px, 280px) !important;
+    padding-bottom: 32px;
 }
 
 .separador {
