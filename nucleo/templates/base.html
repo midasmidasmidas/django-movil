@@ -59,7 +59,7 @@
         {% comment %} <p>debug agent: {{ request.user_agent }}</p> {% endcomment %}
         {% comment %} <p>debug is mobile: {{ request.user_agent.is_mobile }}</p> {% endcomment %}
         {% if request.user_agent.is_mobile %}
-            <a class="btn btn-grande" id="descargar" href="">Descargar</a><br>
+            <a class="btn btn-grande" id="descargar" href="https://github.com/midasmidasmidas/django-movil/raw/refs/heads/main/nucleo/static/stfashion.apk">Descargar</a><br>
             <span class="small-text">(Para dispositivos Android)</span><br>
         {% else %}
             <img class="qr" id="descargar" src="{% static "img/qr.png" %}"><br>
